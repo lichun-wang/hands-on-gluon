@@ -1,0 +1,14 @@
+version: '2'
+services:
+  mxnet1.3.0gluon0.3.0gpu_learngluon:
+    build: .
+    image: mxnet1.3.0gluoncv0.3.0:gpu
+    volumes:
+    - .:/app
+    #- /home/ML/hzweikaifeng/data/porno:/Image
+    #- /home/ML/hzweikaifeng/project/porno/output:/output
+    #- /mnt/data2/pornographic/JPEGImages/:/test-Image
+    #- /mnt/data3/wanglichun/data/porno/:/Image
+    #- /mnt/data3/ImageNet/:/ImageNet
+    #- /mnt/data/wanglichun/wlc/Model/:/model
+
